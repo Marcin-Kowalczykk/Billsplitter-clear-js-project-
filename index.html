@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>billsplitter</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="top">
+            <select name="lang" id="lang">
+                <option value="0" disabled selected>Language</option>
+                <option value="pl">Polski</option>
+                <option value="eng">English</option>
+            </select>
+            <h1 id="header">Napiwkator</h1>
+            <p id="header2">podziel się rachunkiem ze znajomymi</p>
+        </div>
+
+        <div class="bot">
+            <label for="price">Kwota do zapłaty:</label>
+            <input type="number" name="price" id="price">
+
+            <label for="people">liczba osob:</label>
+            <input type="number" name="people" id="people">
+
+            <label id="tipLabel" for="tip">napiwek:</label>
+            <select name="tip" id="tip">
+                <option value="0" disabled selected>wybierz napiwek [%]</option>
+                <option value="0.05">5%</option>
+                <option value="0.1">10%</option>
+                <option value="0.15">15%</option>
+                <option value="0.2">20%</option>
+            </select>
+
+            <button class="count">Oblicz</button>
+            <button class="button2">Od nowa</button>
+            <p class="error"></p>
+            <p class="cost-info">Powinniście się złoyć po <span class="cost"></span>zł</p>
+            <p class="cost-info2">you should put together <span class="cost2"></span>zł</p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>

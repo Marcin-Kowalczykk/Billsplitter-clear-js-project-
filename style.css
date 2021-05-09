@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: rgb(10, 0, 143);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* margin-top: 10vh; */
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(233, 233, 233);
+}
+h1 {
+    margin-top: 20px;
+}
+.wrapper {
+    width: 600px;
+    background-color: white;
+}
+.top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    background-color: rgba(186, 88, 23, 0.83);
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    color: black;
+}
+.top p {
+    margin-top: 20px;
+}
+.bot {
+    padding: 30px 30px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+#lang {
+    margin: 15px 15px 0 0;
+    padding: 3px;
+    width: 15%;
+    align-self: flex-end;
+    justify-self: flex-end;
+    border: none;
+    color: rgb(172, 169, 169);
+   }
+input, select {
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    color: rgb(10, 0, 143);
+    background-color: rgba(0, 31, 204, 0.2);
+    border-radius: 5px;
+    border: 0.5px solid rgba(0, 31, 204, 0.5);
+}
+button {
+    display: block;
+    width: 60%;
+    margin: 20px 20%;
+    padding: 22px;
+    font-size: 25px;
+    border: none;
+    color: black;
+    background-color: rgba(186, 88, 23, 0.83);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.count {
+    transition: font-size 1s;
+}
+.count:hover {
+    font-size: 30px;
+    background-color:rgba(186, 88, 23, 1);
+    color: whitesmoke;
+    border: 0.5px solid rgba(0, 0, 0, .3);
+}
+.button2 {
+    display: none;
+    background-color: green;
+    margin: 0 35% 15px;
+    width: 30%;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    transition: font-size 2s;
+   
+}
+.button2:hover {
+    font-size: 28px;
+    border: 0.5px solid rgba(0, 0, 0, .3);
+    
+}
+.error {
+    color: red;
+    text-align: center;
+    font-size: 23px;
+
+}
+.cost, .cost2 {
+    font-weight: bold;
+    color: black;
+}
+.cost-info, .cost-info2 {
+    text-align: center;
+    font-size: 25px;
+    display: none;
+}
+
+
